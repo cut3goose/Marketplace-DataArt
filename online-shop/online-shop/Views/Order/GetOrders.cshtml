@@ -1,0 +1,50 @@
+﻿@model OrderViewModel[]
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="centered-content">
+    @{
+        if (Model == null || Model.Length == 0)
+        {
+            <h1>Orders not found</h1>
+            return;
+        }
+    }
+
+    <table>
+        @{
+            foreach (var selectedOrder in Model)
+            {
+                <tr>
+                    <td>
+                        <div class="order">
+                            <div class="order-info">
+                                Order #@selectedOrder.Id
+                                <div class="order-status">
+                                    @selectedOrder.OrderStatus
+                                </div>
+                            </div>
+                            <div class="inner-data">
+                                <div class="shipment-info">
+                                    Delivery date: @selectedOrder.ShipDate<br><br>
+                                    Devilery type: @selectedOrder.ShippingType<br>
+                                    Adress: @selectedOrder.Address
+                                </div>
+                                <div class="payment-info">
+                                    Payment type: @selectedOrder.PaymentType<br>
+                                    Delivery price: @selectedOrder.ShippingPrice
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+@section Styles{
+    <link href="@Url.Content("~/css/order_screen_styles.css")" rel="stylesheet" type="text/css"/>
+}

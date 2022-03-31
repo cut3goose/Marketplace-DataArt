@@ -1,0 +1,52 @@
+@model ProductViewModel[];
+
+@{
+    Layout = "_Layout";
+}
+<div class="centered-container">
+    <table>
+        @{
+            if (Model == null || Model.Length == 0)
+            {
+                <p class="empty-cart-text">
+                    Корзина пока что пуста!
+                </p>
+                return;
+            }
+
+            foreach (var selectedProduct in Model)
+            {
+                <form method="post">
+                    <tr>
+                        <td class="product-id">
+                            <input type="number" name="productId" value="@selectedProduct.Id" />
+                        </td>
+                        <td class="img-td">
+                            <img src="@selectedProduct.ImageLink">
+                        </td>
+                        <td>
+                            <div>
+                                @selectedProduct.Name<br>
+                                @selectedProduct.Equipment<br>
+                                @selectedProduct.Price$
+                            </div>
+                        </td>
+                        <td class="quantity-setter">
+                            <input name="quantity" type="number" min="1" maxlength="2" value="1">
+                        </td>
+                        <td class="delete-btn-td">
+                            <button asp-action="DeleteProduct" type="submit">Удалить</button>
+                        </td>
+                    </tr>
+                </form>
+            }
+        }
+    </table>
+    <div class="checkout-btn">
+        <button type="submit">Оформить заказ</button>
+    </div>
+</div>
+
+@section Styles{
+    <link href="@Url.Content("~/css/display_products_styles.css")" rel="stylesheet" type="text/css"/>
+}

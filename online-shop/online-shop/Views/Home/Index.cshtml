@@ -1,0 +1,20 @@
+﻿@model OnlineShop.Contracts.Product.Models.ProductListModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="display-4">First 10 products</h1>
+
+<div>
+    @foreach (var product in Model.Products)
+    {
+        <partial name="~/Views/Product/Components/_ProductInfo.cshtml" model="product"/>
+
+    }
+</div>
+
+@section Scripts
+{
+    <script src="~/js/image.js"></script>
+}

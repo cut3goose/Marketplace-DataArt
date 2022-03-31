@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20211114012005_AddProductDomainEntities.cs" />
+    <Compile Remove="Migrations\20211114012005_AddProductDomainEntities.Designer.cs" />
+    <Compile Remove="Migrations\20211114013855_AddProductDomainEntities.cs" />
+    <Compile Remove="Migrations\20211114013855_AddProductDomainEntities.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\OnlineShop.Contracts.csproj" />
+    <ProjectReference Include="..\online-shop.Infrastructure\OnlineShop.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

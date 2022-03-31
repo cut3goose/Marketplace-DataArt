@@ -1,0 +1,12 @@
+﻿@model OnlineShop.Contracts.Product.Models.ProductModel
+
+<div class="product" data-product-id="@Model.Id">
+    @*<img src="icons/logo.png" />*@
+    @*<img src="/api/Photos/@(Model.Id).png" />*@
+    <img width="118" height="118" />
+    <span>@Model.Name</span>
+    <span>@Model.Price $</span>
+    <button class="btn btn-primary">
+        <div>Add to cart</div>
+    </button>
+</div>

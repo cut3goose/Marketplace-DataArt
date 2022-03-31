@@ -1,0 +1,49 @@
+.centered-content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.order{
+    width: 500px;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: #ededed;
+    border-radius: 15px;
+}
+
+.order-info{
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+    align-items: center
+}
+
+.order-status{
+    margin-left: 5px;
+    background: #99CCCC;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 20px;
+}
+
+.inner-data{
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: space-between;
+    margin-top: 10px;
+    border-top: 3px solid;
+}
+
+.shipment-info{
+    width: 60%;
+    height: 90%
+}
+
+.payment-info{
+    width: 40%;
+    height: 90%;
+}
+
+td{
+    padding-top: 10px;
+}

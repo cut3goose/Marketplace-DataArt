@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+        <PackageReference Include="NUnit" Version="3.13.1" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+        <PackageReference Include="coverlet.collector" Version="3.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Contracts\OnlineShop.Contracts.csproj" />
+      <ProjectReference Include="..\online-shop.Cart.Domain\OnlineShop.Cart.Domain.csproj" />
+      <ProjectReference Include="..\online-shop.Cart.Persistence\OnlineShop.Cart.Persistence.csproj" />
+      <ProjectReference Include="..\online-shop.Infrastructure\OnlineShop.Infrastructure.csproj" />
+      <ProjectReference Include="..\online-shop.Order.Domain\OnlineShop.Order.Domain.csproj" />
+      <ProjectReference Include="..\online-shop.Order.Persistence\OnlineShop.Order.Persistence.csproj" />
+      <ProjectReference Include="..\online-shop.Product.Domain\OnlineShop.Product.Domain.csproj" />
+      <ProjectReference Include="..\online-shop.User.Domain\OnlineShop.User.Domain.csproj" />
+      <ProjectReference Include="..\online-shop.User.Persistence\OnlineShop.User.Persistence.csproj" />
+      <ProjectReference Include="..\online-shop\OnlineShop.csproj" />
+      <ProjectReference Include="..\OnlineShop.Product.WebApi\OnlineShop.Product.WebApi.csproj" />
+      <ProjectReference Include="..\Product.Persistence\OnlineShop.Product.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>

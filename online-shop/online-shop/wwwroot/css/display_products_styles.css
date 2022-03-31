@@ -1,0 +1,119 @@
+/* General settings */
+
+*{
+    font-family: sans-serif;
+}
+
+.empty-cart-text{
+    text-align: center;
+}
+
+.centered-container{
+    align-self: center; 
+}
+
+/* Table Content */
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+/* Table Alignment */
+
+table, th, td{
+    border-radius: 10px;
+}
+
+table{
+    border-spacing: 0;
+    width: 100%;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #f6f6f6;
+}
+
+td{
+    height: 100px;
+    padding: 10px 3px;
+}
+
+td:first-child{
+    padding-left: 10px;
+    width: 110px;
+}
+
+td div{
+    height: 100%;
+}
+
+/* Delete and Input Buttons Alignment */
+
+.quantity-setter{
+    text-align: right;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.delete-btn-td{
+    alignment: center;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.delete-btn-td button{
+    width: 80px;
+    white-space: nowrap;
+}
+
+/* Quantity Setter Settings */
+
+.quantity-setter input{
+    width: 50px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+/* Id Table Data Settings */
+
+.product-id{
+    display: none;
+}
+
+/* Image Table Data Settings */
+
+.img-td{
+    padding: 10px;
+    white-space: nowrap;
+    width: 1%;
+}
+
+/* Checkout Button Settings */
+
+.checkout-btn{
+    margin-top: 15px;
+    text-align: right;
+}
+
+.checkout-btn button{
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    background-color: #99CCCC;
+
+    font-size: 20px;
+}

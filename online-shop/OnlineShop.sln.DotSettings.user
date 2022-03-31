@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dbbeac42_002Dcf6a_002D487f_002Db843_002Dc9824d49fc35/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateOrder_CreatingNewOrder_OrderFoundInListReturnedByGetAllOrders" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::DAC5DD13-329B-45AC-B306-ED37C5D712A0::.NETCoreApp,Version=v3.1::OnlineShop.Tests.Order.OrderServiceTests.CreateOrder_CreatingNewOrder_OrderFoundInListReturnedByGetAllOrders&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::DAC5DD13-329B-45AC-B306-ED37C5D712A0::.NETCoreApp,Version=v3.1::OnlineShop.Tests.Cart.Integration.CartWebApiTests.CreateCart_CreatingCart_CartFoundByUser&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::DAC5DD13-329B-45AC-B306-ED37C5D712A0::.NETCoreApp,Version=v3.1::OnlineShop.Tests.Cart.Integration.CartWebApiTests.DeleteCart_CreatingCart_CartNotFoundByUser&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::DAC5DD13-329B-45AC-B306-ED37C5D712A0::.NETCoreApp,Version=v3.1::OnlineShop.Tests.Cart.Integration.CartWebApiTests.AddProduct_AddProductInCart_ProductFoundInCart&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::DAC5DD13-329B-45AC-B306-ED37C5D712A0::.NETCoreApp,Version=v3.1::OnlineShop.Tests.Cart.Integration.CartWebApiTests.UpdateProduct_AddProductInCartAndIncreaseQuantity_ProductFoundInCart&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::DAC5DD13-329B-45AC-B306-ED37C5D712A0::.NETCoreApp,Version=v3.1::OnlineShop.Tests.Cart.Integration.CartWebApiTests.DeleteCartProduct_AddProductInCartThenDeleteIt_ProductNotFound&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;DAC5DD13-329B-45AC-B306-ED37C5D712A0/d:Cart/d:Integration/f:CartServiceTests.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,48 @@
+﻿@using OnlineShop.Contracts.Order.Enums
+@{
+    Layout = "_Layout";
+}
+
+<div class="centered-content">
+    <body>
+    <form method="post">
+        <table>
+            <tr>
+                <td>
+                    Delivery Type<br>
+                    <div class="data-input">
+                        <select name="ShippingType">
+                            <option value="@ShippingType.Courier">Courier</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Delivery Adress<br>
+                    <div class="data-input">
+                        <input name="Address" type="text">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Payment Type<br>
+                    <div class="data-input">
+                        <select class="dropdown" name="PaymentType">
+                            <option value="@PaymentType.Cash">Cash</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="submit-button">
+            <input type="submit" formmethod="post">
+        </div>
+    </form>
+    </body>
+</div>
+
+@section Styles{
+    <link href="@Url.Content("~/css/order_create_screen_styles.css")" rel="stylesheet" type="text/css"/>
+}
